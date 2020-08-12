@@ -2,19 +2,13 @@ Created by TESTINIUM on 12.08.2020
 
 This is a concept file with following syntax for each concept.
 # <username> ve <password> ile giris yap
-
+ * Mouse over
  * "login" id nesnesine tikla
  * "txtUserName" id alanina <username> yaz
  * "txtPassword" id alanina <password> yaz
  * "btnLogin" id nesnesine tikla
- * "10000" ms bekle
- * ekranda "betulyeni" yazisini gormen gerekiyor
 
- # <username> ve <password> ile hatalı giris yap
-  * "login" id nesnesine tikla
-  * "txtUserName" id alanina <username> yaz
-  * "txtPassword" id alanina <password> yaz
-  * "btnLogin" id nesnesine tikla
-  * "10000" ms bekle
-  * ekranda "hatalı kullanıcı" yazisini gormen gerekiyor
+
+
+
 

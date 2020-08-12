@@ -12,23 +12,17 @@ Kullanıcı başarılı giriş kontrol edilmeli
 --------------------
  Tags:Kullanici girisi
 * "/" adresine git
-* Mouse over
-* "login" id nesnesine tikla
-* "txtUserName" id alanina "betul.yeni@outlook.com" yaz
-* "txtPassword" id alanina "btly.1995" yaz
-* "btnLogin" id nesnesine tikla
+* "betul.yeni@outlook.com" ve "btly.1995" ile giris yap
 
 
- Kullanıcı hatalı giriş kontrol edilmeli
+
+ Kullanıcı Girişi
 --------------------------
-  Tags:Hatali kullanici girisi
-* "/" adresine git
-* Mouse over
-* "login" id nesnesine tikla
-* "txtUserName" id alanina "deneme@gmail.com" yaz
-* "txtPassword" id alanina "12345" yaz
-* "btnLogin" id nesnesine tikla
-
+  Tags:Hatali kullanici giris kontrol
+  * "/" adresine git
+  * "betul.yeni@outlook.com" ve "btly.1995" ile giris yap
+  * ekranda "Betül Yeni" yazisini gormen gerekiyor
+  * Login kontrol "Betül Yeni"
 
 Rasgele Bir Kategori Seçimi
 ---------------------------

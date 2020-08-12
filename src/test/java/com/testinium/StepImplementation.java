@@ -1,10 +1,8 @@
 package com.testinium;
 
 import com.testinium.Base.BaseTest;
-import com.thoughtworks.gauge.AfterScenario;
 import com.thoughtworks.gauge.BeforeScenario;
 import com.thoughtworks.gauge.Step;
-import org.jsoup.Connection;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -26,6 +24,9 @@ import static java.lang.Thread.sleep;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class StepImplementation extends BaseTest {
+
+    private int id;
+    private String element;
 
     @BeforeScenario
     public void setUp() throws Exception {
@@ -68,7 +69,8 @@ public class StepImplementation extends BaseTest {
 
     @Step("ekranda <text> yazisini gormen gerekiyor")
     public void textControl(String text) {
-        getElementBy(By.xpath("//*[contains(text(), '"+text+"')]"));
+
+        getElementBy(By.xpath("//*[@id=\"myAccount\"]/span/a/span[2]"));
     }
 
     public WebElement submitObjectBy(By by) {
@@ -165,7 +167,23 @@ public class StepImplementation extends BaseTest {
     public WebElement clickObjectByName(String name) {
         return clickObjectBy(By.name(name));
     }
+    /*@Step("<id> id nesnesinde <text> ")
+    public WebElement sepet(int id, String element){
+        if (id >= 0)
+        {
+            return clickObjectBy(By.id(element));
+        }
+        return null;
+    }*/
+    @Step("Login kontrol <text> ")
+     public void kontrol(String text){
+        String a;
+        a=By.xpath("//*[@id=\"myAccount\"]/span/a/span[2]").toString() ;
+        if (a == text){
+            getElementBy(By.id("shoppingCart")).click();
+        }
 
+    }
     @Step("\"<css>\" css nesnesine tikla")
     public WebElement clickObjectByCss(String css) {
 

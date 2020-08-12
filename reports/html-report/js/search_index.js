@@ -1,1 +1,1 @@
-var index = {"Tags":{"Hatali kullanici girisi":["specs/Base.html"]},"Specs":{"Getting Started with Gauge":["specs/Base.html"]}};
+var index = {"Tags":{"Hatali kullanici giris kontrol":["specs/Base.html"]},"Specs":{"Getting Started with Gauge":["specs/Base.html"]}};

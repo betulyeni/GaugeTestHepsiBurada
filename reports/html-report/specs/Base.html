@@ -31,13 +31,13 @@
    
   <div class="report_chart">
     <div class="chart">
-      <svg id="pie-chart" data-results="0,1,0" data-total="1">
+      <svg id="pie-chart" data-results="0,0,1" data-total="1">
         <path class="status failed" />
         <path class="shadow failed" data-status="failed"><title>Failed: 0/1</title></path>
         <path class="status passed" />
-        <path class="shadow passed" data-status="passed"><title>Passed: 1/1</title></path>
+        <path class="shadow passed" data-status="passed"><title>Passed: 0/1</title></path>
         <path class="status skipped" />
-        <path class="shadow skipped" data-status="skipped"><title>Skipped: 0/1</title></path>
+        <path class="shadow skipped" data-status="skipped"><title>Skipped: 1/1</title></path>
       </svg>
     </div>
   </div>
@@ -47,14 +47,14 @@
     <div class="report_test-result specs">
         <div class="total-specs" title="Filter all specs"><span class="txt">Total specs</span><span class="value">1</span></div>
         <div class="fail spec-filter" data-status="failed" title="Filter failed specs"><span class="value">0</span></div>
-        <div class="pass spec-filter" data-status="passed" title="Filter passed specs"><span class="value">1</span></div>
-        <div class="skip spec-filter" data-status="skipped" title="Filter skipped specs"><span class="value">0</span></div>
+        <div class="pass spec-filter" data-status="passed" title="Filter passed specs"><span class="value">0</span></div>
+        <div class="skip spec-filter" data-status="skipped" title="Filter skipped specs"><span class="value">1</span></div>
     </div>
     <div class="report_test-result scenarios">
         <div class="total-scenarios"><span class="txt">Total scenario</span><span class="value">1</span></div>
         <div class="fail scenario-stats" data-status="failed"><span class="value">0</span></div>
-        <div class="pass scenario-stats" data-status="passed"><span class="value">1</span></div>
-        <div class="skip scenario-stats" data-status="skipped"><span class="value">0</span></div>
+        <div class="pass scenario-stats" data-status="passed"><span class="value">0</span></div>
+        <div class="skip scenario-stats" data-status="skipped"><span class="value">1</span></div>
     </div>
   </div>
 
@@ -68,15 +68,15 @@
     
     <li>
       <label>Success Rate </label>
-      <span>100%</span>
+      <span>0%</span>
     </li>
     <li>
       <label>Total Time </label>
-      <span>00:00:14</span>
+      <span>00:00:04</span>
     </li>
     <li>
       <label>Generated On </label>
-      <span>Aug 13, 2020 at 12:57am</span>
+      <span>Aug 13, 2020 at 2:40am</span>
     </li>
   </ul>
 
@@ -115,10 +115,10 @@
         
           <a href="Base.html">
              
-              <li class="passed spec-name">
+              <li class="skipped spec-name">
             
               <span id="scenarioName" class="scenarioname">Getting Started with Gauge</span>
-              <span id="time" class="time">00:00:10</span>
+              <span id="time" class="time">00:00:00</span>
             </li>
           </a>
           
@@ -137,8 +137,8 @@
         <div class="hidden report_test-results" alt="Scenarios" title="Scenarios">
           <ul>
             <li class="fail"><span class="value">0</span><span class="txt">Failed</span></li>
-            <li class="pass"><span class="value">1</span><span class="txt">Passed</span></li>
-            <li class="skip"><span class="value">0</span><span class="txt">Skipped</span></li>
+            <li class="pass"><span class="value">0</span><span class="txt">Passed</span></li>
+            <li class="skip"><span class="value">1</span><span class="txt">Skipped</span></li>
           </ul>
         </div>
       </div>
@@ -150,7 +150,7 @@
               <i class="fa fa-clipboard" aria-hidden="true" title="Copy to Clipboard"></i>
           </button>
         </div>
-        <span class="time">00:00:10</span>
+        <span class="time">00:00:00</span>
       </div>
 
 	
@@ -180,21 +180,20 @@ To execute this specification, use <code>mvn test</code></p>
       
         
 	
-  <div class="scenario-container passed">
-    
+  <div class="scenario-container skipped">
 
 	
   <div class="scenario-head">
-    <h3 class="head borderBottom"> Kullanıcı hatalı giriş kontrol edilmeli</h3>
+    <h3 class="head borderBottom"> Kullanıcı Girişi</h3>
     
-    <span class="time">00:00:10</span>
+    <span class="time">00:00:00</span>
 
 	
   
     <div class="tags scenario_tags contentSection">
       <strong>Tags:</strong>
       
-        <span> Hatali kullanici girisi</span>
+        <span> Hatali kullanici giris kontrol</span>
       
     </div>
   
@@ -219,10 +218,10 @@ To execute this specification, use <code>mvn test</code></p>
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:02</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -282,14 +281,60 @@ To execute this specification, use <code>mvn test</code></p>
   
     
   
+  <div class="step concept">
+  
+  
+    <h5 class="execution-time">
+      <span class="time">Execution Time : 00:00:00</span>
+    </h5>
+  
+  <div class="step-info not-executed">
+  
+  <ul>
+    <li class="step">
+      <div class="step-txt">
+
+
+  <i class="fa fa-plus-square" aria-hidden="true"></i>
+  
+  
+    
+      <span class="parameter">"betul.yeni@outlook.com"</span>
+    
+  
+    
+      <span>
+         ve 
+      </span>
+    
+  
+    
+      <span class="parameter">"btly.1995"</span>
+    
+  
+    
+      <span>
+         ile giris yap
+      </span>
+    
+  
+  </div>
+
+  </li></ul></div></div>
+  <div class="concept-steps">
+  
+    
+  
+    
+  
   <div class="step">
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:01</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -352,7 +397,7 @@ To execute this specification, use <code>mvn test</code></p>
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -416,10 +461,10 @@ To execute this specification, use <code>mvn test</code></p>
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:02</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -448,7 +493,7 @@ To execute this specification, use <code>mvn test</code></p>
     
   
     
-      <span class="parameter">"deneme@gmail.com"</span>
+      <span class="parameter">"betul.yeni@outlook.com"</span>
     
   
     
@@ -496,7 +541,7 @@ To execute this specification, use <code>mvn test</code></p>
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -525,7 +570,7 @@ To execute this specification, use <code>mvn test</code></p>
     
   
     
-      <span class="parameter">"12345"</span>
+      <span class="parameter">"btly.1995"</span>
     
   
     
@@ -573,7 +618,7 @@ To execute this specification, use <code>mvn test</code></p>
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -623,6 +668,153 @@ To execute this specification, use <code>mvn test</code></p>
   
 	</li></ul></div></div>
   
+    
+  
+
+  
+
+  
+  </div>
+
+  
+
+  
+    
+  
+    
+  
+  <div class="step">
+  
+  
+    <h5 class="execution-time">
+      <span class="time">Execution Time : 00:00:00</span>
+    </h5>
+  
+  <div class="step-info not-executed">
+  
+  <ul>
+    <li class="step">
+      <div class="step-txt">
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+      <span>
+        ekranda 
+      </span>
+    
+  
+    
+      <span class="parameter">"Betül Yeni"</span>
+    
+  
+    
+      <span>
+         yazisini gormen gerekiyor
+      </span>
+    
+  
+  </div>
+
+  
+    
+    
+  
+
+    
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+  
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+  <div class="step">
+  
+  
+  <div class="step-info skipped">
+  
+  <ul>
+    <li class="step">
+      <div class="step-txt">
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+      <span>
+        Login kontrol 
+      </span>
+    
+  
+    
+      <span class="parameter">"Betül Yeni"</span>
+    
+  
+  </div>
+
+  
+    
+    
+  
+
+    
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+  
+	</li></ul></div></div>
+  
+    
+        
+  <div class="message-container">
+    <h4 class="skipReason">Skipped Reason: Step implementation not found</h4>
+  </div>
+
     
   
 
