@@ -106,7 +106,7 @@ public class StepImplementation extends BaseTest {
     }
 
 
-    @Step("\"<id>\" id alanina \"<value>\" yaz")
+    @Step("<id> id alanina <value> yaz")
     public WebElement setObjectById(String id, String value) {
 
         return setObjectBy(By.id(id), value);
@@ -156,7 +156,7 @@ public class StepImplementation extends BaseTest {
     }
 
 
-    @Step("\"<id>\" id nesnesine tikla")
+    @Step("<id> id nesnesine tikla")
     public WebElement clickObjectById(String id) {
         return clickObjectBy(By.id(id));
     }
@@ -170,6 +170,12 @@ public class StepImplementation extends BaseTest {
     public WebElement clickObjectByCss(String css) {
 
         return clickObjectBy(By.cssSelector(css));
+    }
+    @Step("Mouse over")
+    public  void mouseOver(){
+        Actions action = new Actions(driver);
+        WebElement we = driver.findElement(By.xpath("//*[@id=\"myAccount\"]"));
+        action.moveToElement(we).build().perform();
     }
 
     @Step("\"<css>\" className nesnesine tikla")
@@ -293,6 +299,7 @@ public class StepImplementation extends BaseTest {
         } catch (InterruptedException e) {
         }
     }
+
 
     public void moveMouse(By by, By validateDisplayWebObject, int count) {
         WebDriverWait wait = new WebDriverWait(driver, 20);

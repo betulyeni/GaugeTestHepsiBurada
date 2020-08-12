@@ -10,12 +10,31 @@ Siteye Giriş
 
 Kullanıcı başarılı giriş kontrol edilmeli
 --------------------
+ Tags:Kullanici girisi
 * "/" adresine git
-* "betul.yeni@outlook.com" ve "btly.1995" ile giris yap
-* "shoppingCart" id nesnesi varsa tikla
+* Mouse over
+* "login" id nesnesine tikla
+* "txtUserName" id alanina "betul.yeni@outlook.com" yaz
+* "txtPassword" id alanina "btly.1995" yaz
+* "btnLogin" id nesnesine tikla
+
 
  Kullanıcı hatalı giriş kontrol edilmeli
 --------------------------
   Tags:Hatali kullanici girisi
 * "/" adresine git
-* "deneme@gmail.com" ve "12345" ile hatalı giris yap
+* Mouse over
+* "login" id nesnesine tikla
+* "txtUserName" id alanina "deneme@gmail.com" yaz
+* "txtPassword" id alanina "12345" yaz
+* "btnLogin" id nesnesine tikla
+
+
+Rasgele Bir Kategori Seçimi
+---------------------------
+* "Menu-Banner" id nesnesi altindaki "Mod" yazisina tikla
+* ekranda "POPÜLER MARKALAR" yazisini gormen gerekiyor
+* "/" adresine git
+* "Menu-Banner" id nesnesi altindaki "Elektronik" yazisina tikla
+* ekranda "Popüler Markalar" yazisini gormen gerekiyor
+
