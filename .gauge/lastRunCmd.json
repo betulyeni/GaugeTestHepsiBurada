@@ -1,0 +1,8 @@
+[
+	"C:\\Program Files\\Gauge\\bin\\gauge.exe",
+	"run",
+	"--machine-readable",
+	"--hide-suggestion",
+	"--simple-console",
+	"C:/Users/TESTINIUM/IdeaProjects/GaugeTestHepsiBurada/specs/Base.spec:6"
+]

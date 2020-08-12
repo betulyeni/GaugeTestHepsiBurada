@@ -1,0 +1,88 @@
+12-08-2020 22:44:58.596 [Gauge] [INFO] Watching directory: C:\Users\TESTINIUM\IdeaProjects\GaugeTestHepsiBurada\specs
+12-08-2020 22:44:58.607 [Gauge] [DEBUG] Found 1 files
+12-08-2020 22:44:58.626 [Gauge] [INFO] Initializing concepts cache with 0 concepts
+12-08-2020 22:44:58.644 [Gauge] [INFO] Initializing specs cache with 1 specs
+12-08-2020 22:44:58.645 [Gauge] [DEBUG] Adding specs from C:\Users\TESTINIUM\IdeaProjects\GaugeTestHepsiBurada\specs\Base.spec
+12-08-2020 22:44:58.645 [Gauge] [INFO] Initializing steps cache with 1 steps
+12-08-2020 22:44:58.646 [Gauge] [INFO] Gauge daemon initialized and listening on port: 64401
+12-08-2020 22:46:15.204 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Site Giri\305\237i <time>" > 
+12-08-2020 22:46:15.205 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Site Giri\305\237i {}" parameterizedStepValue:"Site Giri\305\237i <time>" parameters:"time" > > 
+12-08-2020 22:46:15.380 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Site Giri\305\237i \"2\"" > 
+12-08-2020 22:46:15.381 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Site Giri\305\237i {}" parameterizedStepValue:"Site Giri\305\237i <2>" parameters:"2" > > 
+12-08-2020 22:52:30.870 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Site Giri\305\237i \"1\"" > 
+12-08-2020 22:52:30.871 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Site Giri\305\237i {}" parameterizedStepValue:"Site Giri\305\237i <1>" parameters:"1" > > 
+12-08-2020 22:52:33.564 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Site Giri\305\237i \"10\"" > 
+12-08-2020 22:52:33.567 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Site Giri\305\237i {}" parameterizedStepValue:"Site Giri\305\237i <10>" parameters:"10" > > 
+12-08-2020 22:52:38.830 [Gauge] [INFO] Spec file added / modified: C:\Users\TESTINIUM\IdeaProjects\GaugeTestHepsiBurada\specs\Base.spec
+12-08-2020 22:52:38.835 [Gauge] [INFO] Spec file added / modified: C:\Users\TESTINIUM\IdeaProjects\GaugeTestHepsiBurada\specs\Base.spec
+12-08-2020 22:59:07.057 [Gauge] [INFO] Closing connection [127.0.0.1:64402] cause: read tcp 127.0.0.1:64401->127.0.0.1:64402: wsarecv: An existing connection was forcibly closed by the remote host.
+12-08-2020 22:59:07.382 [Gauge] [CRITICAL] Killing Gauge daemon. Parent process with pid 22632 has terminated.
+12-08-2020 22:59:18.283 [Gauge] [INFO] Watching directory: C:\Users\TESTINIUM\IdeaProjects\GaugeTestHepsiBurada\specs
+12-08-2020 22:59:18.285 [Gauge] [DEBUG] Found 1 files
+12-08-2020 22:59:18.290 [Gauge] [INFO] Initializing concepts cache with 0 concepts
+12-08-2020 22:59:18.292 [Gauge] [INFO] Initializing specs cache with 1 specs
+12-08-2020 22:59:18.292 [Gauge] [DEBUG] Adding specs from C:\Users\TESTINIUM\IdeaProjects\GaugeTestHepsiBurada\specs\Base.spec
+12-08-2020 22:59:18.292 [Gauge] [INFO] Initializing steps cache with 1 steps
+12-08-2020 22:59:18.292 [Gauge] [INFO] Gauge daemon initialized and listening on port: 56938
+12-08-2020 23:00:34.018 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Site Giri\305\237i <time>" > 
+12-08-2020 23:00:34.018 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Site Giri\305\237i {}" parameterizedStepValue:"Site Giri\305\237i <time>" parameters:"time" > > 
+12-08-2020 23:00:34.303 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Site Giri\305\237i \"2\"" > 
+12-08-2020 23:00:34.303 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Site Giri\305\237i {}" parameterizedStepValue:"Site Giri\305\237i <2>" parameters:"2" > > 
+12-08-2020 23:00:46.383 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Site Giri\305\237i" > 
+12-08-2020 23:00:46.383 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Site Giri\305\237i" parameterizedStepValue:"Site Giri\305\237i" > > 
+12-08-2020 23:00:48.705 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Site Giri\305\237i 2" > 
+12-08-2020 23:00:48.705 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Site Giri\305\237i 2" parameterizedStepValue:"Site Giri\305\237i 2" > > 
+12-08-2020 23:00:53.481 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Site Giri\305\237i 2\"\"" > 
+12-08-2020 23:00:53.482 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Site Giri\305\237i 2{}" parameterizedStepValue:"Site Giri\305\237i 2<>" parameters:"" > > 
+12-08-2020 23:00:55.340 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Site Giri\305\237i \"\"" > 
+12-08-2020 23:00:55.342 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Site Giri\305\237i {}" parameterizedStepValue:"Site Giri\305\237i <>" parameters:"" > > 
+12-08-2020 23:01:00.293 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Site Giri\305\237i '2'" > 
+12-08-2020 23:01:00.294 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Site Giri\305\237i '2'" parameterizedStepValue:"Site Giri\305\237i '2'" > > 
+12-08-2020 23:01:13.872 [Gauge] [INFO] Spec file added / modified: C:\Users\TESTINIUM\IdeaProjects\GaugeTestHepsiBurada\specs\Base.spec
+12-08-2020 23:01:13.877 [Gauge] [INFO] Spec file added / modified: C:\Users\TESTINIUM\IdeaProjects\GaugeTestHepsiBurada\specs\Base.spec
+12-08-2020 23:07:32.900 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Site Girisi <time>" > 
+12-08-2020 23:07:32.901 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Site Girisi {}" parameterizedStepValue:"Site Girisi <time>" parameters:"time" > > 
+12-08-2020 23:07:38.093 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Site Girisi \"2\"" > 
+12-08-2020 23:07:38.094 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Site Girisi {}" parameterizedStepValue:"Site Girisi <2>" parameters:"2" > > 
+12-08-2020 23:07:43.308 [Gauge] [INFO] Spec file added / modified: C:\Users\TESTINIUM\IdeaProjects\GaugeTestHepsiBurada\specs\Base.spec
+12-08-2020 23:07:43.313 [Gauge] [INFO] Spec file added / modified: C:\Users\TESTINIUM\IdeaProjects\GaugeTestHepsiBurada\specs\Base.spec
+12-08-2020 23:09:50.570 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"<ulr> adresine git" > 
+12-08-2020 23:09:50.570 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"{} adresine git" parameterizedStepValue:"<ulr> adresine git" parameters:"ulr" > > 
+12-08-2020 23:10:00.790 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"<ur> adresine git" > 
+12-08-2020 23:10:00.790 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"{} adresine git" parameterizedStepValue:"<ur> adresine git" parameters:"ur" > > 
+12-08-2020 23:10:01.568 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"<url> adresine git" > 
+12-08-2020 23:10:01.569 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"{} adresine git" parameterizedStepValue:"<url> adresine git" parameters:"url" > > 
+12-08-2020 23:10:09.566 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<> 
+12-08-2020 23:10:09.566 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<> > 
+12-08-2020 23:10:10.749 [Gauge] [DEBUG] Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+12-08-2020 23:10:10.749 [Gauge] [DEBUG] Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Site Girisi {}" parameterizedStepValue:"Site Girisi <2>" parameters:"2" > > 
+12-08-2020 23:10:10.757 [Gauge] [DEBUG] Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+12-08-2020 23:10:10.758 [Gauge] [DEBUG] Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+12-08-2020 23:10:15.783 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"adresine git" > 
+12-08-2020 23:10:15.783 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"adresine git" parameterizedStepValue:"adresine git" > > 
+12-08-2020 23:10:16.545 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"\"\" adresine git" > 
+12-08-2020 23:10:16.545 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"{} adresine git" parameterizedStepValue:"<> adresine git" parameters:"" > > 
+12-08-2020 23:10:18.949 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"\"ww\" adresine git" > 
+12-08-2020 23:10:18.949 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"{} adresine git" parameterizedStepValue:"<ww> adresine git" parameters:"ww" > > 
+12-08-2020 23:10:19.278 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"\"www\" adresine git" > 
+12-08-2020 23:10:19.278 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"{} adresine git" parameterizedStepValue:"<www> adresine git" parameters:"www" > > 
+12-08-2020 23:10:19.784 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"\"www.\" adresine git" > 
+12-08-2020 23:10:19.784 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"{} adresine git" parameterizedStepValue:"<www.> adresine git" parameters:"www." > > 
+12-08-2020 23:10:21.161 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"\"www.hepsi\" adresine git" > 
+12-08-2020 23:10:21.162 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"{} adresine git" parameterizedStepValue:"<www.hepsi> adresine git" parameters:"www.hepsi" > > 
+12-08-2020 23:10:22.459 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"\"www.hepsibura\" adresine git" > 
+12-08-2020 23:10:22.459 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"{} adresine git" parameterizedStepValue:"<www.hepsibura> adresine git" parameters:"www.hepsibura" > > 
+12-08-2020 23:10:23.494 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"\"www.hepsiburada\" adresine git" > 
+12-08-2020 23:10:23.495 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"{} adresine git" parameterizedStepValue:"<www.hepsiburada> adresine git" parameters:"www.hepsiburada" > > 
+12-08-2020 23:10:24.668 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"\"www.hepsiburada.com\" adresine git" > 
+12-08-2020 23:10:24.669 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"{} adresine git" parameterizedStepValue:"<www.hepsiburada.com> adresine git" parameters:"www.hepsiburada.com" > > 
+12-08-2020 23:10:27.705 [Gauge] [INFO] Spec file added / modified: C:\Users\TESTINIUM\IdeaProjects\GaugeTestHepsiBurada\specs\Base.spec
+12-08-2020 23:10:27.707 [Gauge] [INFO] Spec file added / modified: C:\Users\TESTINIUM\IdeaProjects\GaugeTestHepsiBurada\specs\Base.spec
+12-08-2020 23:11:40.324 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"\"https://www.hepsiburada.com\" adresine git" > 
+12-08-2020 23:11:40.324 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"{} adresine git" parameterizedStepValue:"<https://www.hepsiburada.com> adresine git" parameters:"https://www.hepsiburada.com" > > 
+12-08-2020 23:11:45.468 [Gauge] [INFO] Spec file added / modified: C:\Users\TESTINIUM\IdeaProjects\GaugeTestHepsiBurada\specs\Base.spec
+12-08-2020 23:11:45.471 [Gauge] [INFO] Spec file added / modified: C:\Users\TESTINIUM\IdeaProjects\GaugeTestHepsiBurada\specs\Base.spec
+12-08-2020 23:12:18.034 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"\"/\" adresine git" > 
+12-08-2020 23:12:18.034 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"{} adresine git" parameterizedStepValue:"</> adresine git" parameters:"/" > > 
+12-08-2020 23:12:21.000 [Gauge] [INFO] Spec file added / modified: C:\Users\TESTINIUM\IdeaProjects\GaugeTestHepsiBurada\specs\Base.spec
+12-08-2020 23:12:21.002 [Gauge] [INFO] Spec file added / modified: C:\Users\TESTINIUM\IdeaProjects\GaugeTestHepsiBurada\specs\Base.spec
