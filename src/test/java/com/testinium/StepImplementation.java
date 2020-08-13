@@ -131,7 +131,7 @@ public class StepImplementation extends BaseTest {
     public WebElement setObjectByClassName(String className, String value) {
         return setObjectBy(By.className(className), value);
     }
-
+    @Step("<by> seçiminiz <value>")
     public WebElement selectValueObjectBy(By by, String value) {
         WebElement element = getElementBy(by);
         new Select(element).selectByVisibleText(value);
@@ -167,14 +167,7 @@ public class StepImplementation extends BaseTest {
     public WebElement clickObjectByName(String name) {
         return clickObjectBy(By.name(name));
     }
-    /*@Step("<id> id nesnesinde <text> ")
-    public WebElement sepet(int id, String element){
-        if (id >= 0)
-        {
-            return clickObjectBy(By.id(element));
-        }
-        return null;
-    }*/
+
     @Step("Login kontrol <text> ")
      public void kontrol(String text){
         String a;
@@ -193,6 +186,14 @@ public class StepImplementation extends BaseTest {
     public  void mouseOver(){
         Actions action = new Actions(driver);
         WebElement we = driver.findElement(By.xpath("//*[@id=\"myAccount\"]"));
+        action.moveToElement(we).build().perform();
+    }
+    @Step("Mouse over1")
+    public  void mouseOver1(){
+        Random rand = new Random();
+        int result = rand.nextInt(9);
+        Actions action = new Actions(driver);
+        WebElement we = driver.findElement(By.xpath("//*[@id=\"navigationDesktop_183\"]/div/div/div/div["+result+"]"));
         action.moveToElement(we).build().perform();
     }
 
@@ -488,6 +489,7 @@ public class StepImplementation extends BaseTest {
         int n = rand.nextInt(contentList.size());
         return contentList.get(n);
     }
+
 
     public boolean isExistElement(int sec, By by) {
         try {
