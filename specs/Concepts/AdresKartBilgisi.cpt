@@ -1,0 +1,32 @@
+Created by TESTINIUM on 13.08.2020
+
+This is a concept file with following syntax for each concept.
+# <adın>,<soyadın>,<adres>,<adresAdı>,<telefon>,<tc>,<kartNo>,<karttakiIsim>,<cvc> bilgileri giriniz
+* "shoppingCart" id nesnesi varsa tikla
+* "Alışverişi Tamamla" yazisina tikla
+* "link-type-two" className nesnesine tikla
+* "first-name" id alanina <adın> yaz
+* "last-name" id alanina <soyadın> yaz
+* "filter-option pull-left" seçiminiz "1"
+* "//*[@id=form-address]" seçiminiz "2"
+* "//*[@id=form-address]/div/div/section[2]/div[4]/div/div/button/span[1]" seçiminiz "3"
+*"address" id alanina <adres> yaz
+* "address-name" id alanina <adresAdı> yaz
+* "phone" id alanina <telefon> yaz
+*"citizen-id" id alanina <tc> yaz
+* "Adresi Kaydet" yazisina tikla
+* "Devam Et" yazisina tikla
+* "plus-icon" className nesnesine tikla
+* "card-no" id alanina <kartNo> yaz
+*"holder-Name" id alanina <karttakiIsim> yaz
+*"//*[@id=payment-type-1]/div/form/fieldset/div[3]/div/div[1]/div/button" seçiminiz "02"
+*"filter-option pull-left " seçiminiz "2021"
+*"cvc" id alanina <cvc> yaz
+* "/" adresine git
+* "//*[@id=shoppingCart]" xpath nesnesine tikla
+* "btn-delete" className nesnesine tikla
+* Mouse over
+*"//*[@id=myAccount]" id nesnesi varsa tikla
+* "NavigationMenuItem-3JKIS" className nesnesine tikla
+* "btn-delete btn-text" className nesnesine tikla
+* "btn btn-md" className nesnesine tikla

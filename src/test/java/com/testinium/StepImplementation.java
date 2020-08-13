@@ -34,8 +34,6 @@ public class StepImplementation extends BaseTest {
         this.driver = super.driver;
     }
 
-
-
     protected WebDriver driver;
     public static final int DEFAULT_WAIT = 20;
     public static final int MIN_WAIT = 5;
@@ -58,6 +56,12 @@ public class StepImplementation extends BaseTest {
     @Step("\"<id>\" id nesnesi altindaki \"<text>\" yazisina tikla")
     public WebElement clickTextInElement(String id, String text) {
         WebElement element = getElementBy(By.xpath("//*[@id='"+id+"']//*[contains(text(), '"+text+"')]"));
+        element.click();
+        return element;
+    }
+    @Step("\"<css>\" className nesnesi altindaki \"<text>\" yazisina tikla")
+    public WebElement clickTextInElement1(String css, String text) {
+        WebElement element = getElementBy(By.xpath("//*[@name='"+css+"']//*[contains(text(), '"+text+"')]"));
         element.click();
         return element;
     }
@@ -151,6 +155,7 @@ public class StepImplementation extends BaseTest {
     }
 
 
+
     public WebElement selectIndexObjectById(String name, int index) {
         WebElement element = driver.findElement(By.id(name));
         new Select(element).selectByIndex(index);
@@ -160,6 +165,7 @@ public class StepImplementation extends BaseTest {
 
     @Step("<id> id nesnesine tikla")
     public WebElement clickObjectById(String id) {
+
         return clickObjectBy(By.id(id));
     }
 
@@ -190,12 +196,11 @@ public class StepImplementation extends BaseTest {
     }
     @Step("Mouse over1")
     public  void mouseOver1(){
-        Random rand = new Random();
-        int result = rand.nextInt(9);
         Actions action = new Actions(driver);
-        WebElement we = driver.findElement(By.xpath("//*[@id=\"navigationDesktop_183\"]/div/div/div/div["+result+"]"));
+        WebElement we = driver.findElement(By.xpath("//*[@id=\"navigationDesktop_183\"]/div/div/div/div[1]"));
         action.moveToElement(we).build().perform();
     }
+
 
     @Step("\"<css>\" className nesnesine tikla")
     public WebElement clickObjectByClassName(String className) {
