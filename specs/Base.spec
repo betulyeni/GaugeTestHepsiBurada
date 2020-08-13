@@ -1,8 +1,6 @@
 Getting Started with Gauge
 ==========================
 
-This is an executable specification file. This file follows markdown syntax. Every heading in this file denotes a scenario. Every bulleted point denotes a step.
-To execute this specification, use `mvn test`
 Siteye Giriş
 -----------
 Tags: Anasayfaya giriş
@@ -13,6 +11,16 @@ Kullanıcı başarılı giriş kontrol edilmeli
 Tags:Kullanici girisi
 * "/" adresine git
 * "xxxxxxx" ve "xxxxxx" ile giris yap
+
+
+Ürün Seçimi
+--------------------
+Tags:Kullanici girisi
+* "/" adresine git
+* Rastgele bir kategori ve alt kategori seçme
+//* Mouse over1
+//* Ürün Seçimi
+
 
  Kullanıcı Girişi
 --------------------------
@@ -29,7 +37,7 @@ Tags: Kategori ve alt kategori seçimi
 * Mouse over1
 * Ürün Seçimi
 * En düşük "10" ve En yüksek "4000" bilgisi giriniz
-
+* Seçilen ürünün kayıtları
 
 Yeni adres ekle
 ---------------------

@@ -183,6 +183,23 @@ public class StepImplementation extends BaseTest {
         }
 
     }
+   public void rndNumber(String className){
+        List<WebElement> elementList= driver.findElements(By.className(className));
+        int size= elementList.size();
+        int rndNumber= new Random().nextInt(size);
+        WebElement element= elementList.get(rndNumber);
+        element.click();
+    }
+
+    @Step("Rastgele bir kategori ve alt kategori seçme")
+    public void selectCategory(){
+            rndNumber("MenuItems-1-U3X");
+            waitSeconds(4);
+            rndNumber("ChildMenuItems-aeXwv");
+        this.selectCategory();
+    }
+
+
     @Step("\"<css>\" css nesnesine tikla")
     public WebElement clickObjectByCss(String css) {
 
@@ -197,12 +214,12 @@ public class StepImplementation extends BaseTest {
     @Step("Mouse over1")
     public  void mouseOver1(){
         Actions action = new Actions(driver);
-        WebElement we = driver.findElement(By.xpath("//*[@id=\"navigationDesktop_183\"]/div/div/div/div[1]"));
+        WebElement we = driver.findElement(By.xpath("//*[@id='navigationDesktop_183']/div/div/div/div[1]/div/ul/li[2]/span/span"));
         action.moveToElement(we).build().perform();
     }
 
 
-    @Step("\"<css>\" className nesnesine tikla")
+    @Step("<css> className nesnesine tikla")
     public WebElement clickObjectByClassName(String className) {
         return clickObjectBy(By.className(className));
     }

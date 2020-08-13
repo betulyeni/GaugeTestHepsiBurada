@@ -31,13 +31,13 @@
    
   <div class="report_chart">
     <div class="chart">
-      <svg id="pie-chart" data-results="0,0,1" data-total="1">
+      <svg id="pie-chart" data-results="1,0,0" data-total="1">
         <path class="status failed" />
-        <path class="shadow failed" data-status="failed"><title>Failed: 0/1</title></path>
+        <path class="shadow failed" data-status="failed"><title>Failed: 1/1</title></path>
         <path class="status passed" />
         <path class="shadow passed" data-status="passed"><title>Passed: 0/1</title></path>
         <path class="status skipped" />
-        <path class="shadow skipped" data-status="skipped"><title>Skipped: 1/1</title></path>
+        <path class="shadow skipped" data-status="skipped"><title>Skipped: 0/1</title></path>
       </svg>
     </div>
   </div>
@@ -46,15 +46,15 @@
   <div class="report_test-results">
     <div class="report_test-result specs">
         <div class="total-specs" title="Filter all specs"><span class="txt">Total specs</span><span class="value">1</span></div>
-        <div class="fail spec-filter" data-status="failed" title="Filter failed specs"><span class="value">0</span></div>
+        <div class="fail spec-filter" data-status="failed" title="Filter failed specs"><span class="value">1</span></div>
         <div class="pass spec-filter" data-status="passed" title="Filter passed specs"><span class="value">0</span></div>
-        <div class="skip spec-filter" data-status="skipped" title="Filter skipped specs"><span class="value">1</span></div>
+        <div class="skip spec-filter" data-status="skipped" title="Filter skipped specs"><span class="value">0</span></div>
     </div>
     <div class="report_test-result scenarios">
         <div class="total-scenarios"><span class="txt">Total scenario</span><span class="value">1</span></div>
-        <div class="fail scenario-stats" data-status="failed"><span class="value">0</span></div>
+        <div class="fail scenario-stats" data-status="failed"><span class="value">1</span></div>
         <div class="pass scenario-stats" data-status="passed"><span class="value">0</span></div>
-        <div class="skip scenario-stats" data-status="skipped"><span class="value">1</span></div>
+        <div class="skip scenario-stats" data-status="skipped"><span class="value">0</span></div>
     </div>
   </div>
 
@@ -72,11 +72,11 @@
     </li>
     <li>
       <label>Total Time </label>
-      <span>00:00:05</span>
+      <span>00:01:18</span>
     </li>
     <li>
       <label>Generated On </label>
-      <span>Aug 13, 2020 at 12:01pm</span>
+      <span>Aug 13, 2020 at 2:06pm</span>
     </li>
   </ul>
 
@@ -114,11 +114,11 @@
         <ul id="scenarios" class="spec-list">
         
           <a href="Base.html">
-             
-              <li class="skipped spec-name">
+            
+              <li class="failed spec-name">
             
               <span id="scenarioName" class="scenarioname">Getting Started with Gauge</span>
-              <span id="time" class="time">00:00:00</span>
+              <span id="time" class="time">00:01:13</span>
             </li>
           </a>
           
@@ -136,9 +136,9 @@
         <h3 class="spec-head" title="C:\Users\TESTINIUM\IdeaProjects\GaugeTestHepsiBurada\specs\Base.spec">Getting Started with Gauge</h3>
         <div class="hidden report_test-results" alt="Scenarios" title="Scenarios">
           <ul>
-            <li class="fail"><span class="value">0</span><span class="txt">Failed</span></li>
+            <li class="fail"><span class="value">1</span><span class="txt">Failed</span></li>
             <li class="pass"><span class="value">0</span><span class="txt">Passed</span></li>
-            <li class="skip"><span class="value">1</span><span class="txt">Skipped</span></li>
+            <li class="skip"><span class="value">0</span><span class="txt">Skipped</span></li>
           </ul>
         </div>
       </div>
@@ -150,7 +150,7 @@
               <i class="fa fa-clipboard" aria-hidden="true" title="Copy to Clipboard"></i>
           </button>
         </div>
-        <span class="time">00:00:00</span>
+        <span class="time">00:01:13</span>
       </div>
 
 	
@@ -169,9 +169,7 @@
     <div class="content">
     
   
-  <span><p>This is an executable specification file. This file follows markdown syntax. Every heading in this file denotes a scenario. Every bulleted point denotes a step.
-To execute this specification, use <code>mvn test</code></p>
-</span>
+  <span></span>
   
   
 
@@ -180,20 +178,21 @@ To execute this specification, use <code>mvn test</code></p>
       
         
 	
-  <div class="scenario-container skipped">
+  <div class="scenario-container failed">
+    
 
 	
   <div class="scenario-head">
-    <h3 class="head borderBottom">Rasgele Bir Kategori Seçimi</h3>
+    <h3 class="head borderBottom">Ürün Seçimi</h3>
     
-    <span class="time">00:00:00</span>
+    <span class="time">00:01:13</span>
 
 	
   
     <div class="tags scenario_tags contentSection">
       <strong>Tags:</strong>
       
-        <span> Kategori ve alt kategori seçimi</span>
+        <span> Kullanici girisi</span>
       
     </div>
   
@@ -218,10 +217,10 @@ To execute this specification, use <code>mvn test</code></p>
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:00</span>
+      <span class="time">Execution Time : 00:00:02</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -285,10 +284,10 @@ To execute this specification, use <code>mvn test</code></p>
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:00</span>
+      <span class="time">Execution Time : 00:01:07</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info failed">
   
   <ul>
     <li class="step">
@@ -308,102 +307,55 @@ To execute this specification, use <code>mvn test</code></p>
   
     
       <span>
-        Mouse over1
+        Rastgele bir kategori ve alt kategori seçme
       </span>
     
   
   </div>
 
-  
-    
-    
-  
-
-    
-    
-  
-
-  
-  
-  
-  
-
-  
-  
-
-  
-	</li></ul></div></div>
-  
-    
-  
-
-  
-
-  
-    
-  
-    
-  
-  <div class="step">
-  
-  
-  <div class="step-info skipped">
-  
-  <ul>
-    <li class="step">
-      <div class="step-txt">
-
-
-  
-  
-
-  
-  
-
-  
-  
-  
-  
-  
-    
-      <span class="parameter">"//ul[@class=&#39;ChildMenuItems-VRuN-&#39;]//li//a[@class=&#39;ChildMenuItems-1Mjr0 item-1157&#39;]"</span>
-    
-  
-    
-      <span>
-         xpath nesnesine tikla
-      </span>
-    
-  
-  </div>
-
-  
-    
-    
-  
-
-    
-    
-  
-
-  
-  
-  
-  
-
-  
-  
-
-  
-	</li></ul></div></div>
   
     
         
-  <div class="message-container">
-    <h4 class="skipReason">Skipped Reason: Step implementation not found</h4>
+  <div class="error-container failed">
+    <div class="exception-container">
+      <div class="exception">
+        <h4 class="error-message">
+          <pre>java.lang.IllegalArgumentException: bound must be positive</pre>
+        </h4>
+        <pre class="stacktrace">java.util.Random.nextInt(Unknown Source)<br/>com.testinium.StepImplementation.rndNumber(StepImplementation.java:189)<br/>com.testinium.StepImplementation.selectCategory(StepImplementation.java:196)<br/>com.testinium.StepImplementation.selectCategory(StepImplementation.java:199)<br/>com.testinium.StepImplementation.selectCategory(StepImplementation.java:199)<br/>com.testinium.StepImplementation.selectCategory(StepImplementation.java:199)<br/>com.testinium.StepImplementation.selectCategory(StepImplementation.java:199)<br/>com.testinium.StepImplementation.selectCategory(StepImplementation.java:199)<br/>com.testinium.StepImplementation.selectCategory(StepImplementation.java:199)<br/>com.testinium.StepImplementation.selectCategory(StepImplementation.java:199)<br/></pre>
+      </div>
+      
+         <div class="screenshot-container">
+          <div class="screenshot">
+            <a href="../images/screenshot-93bc2879-84a3-4fe8-9610-a0a56ddb15b5.png" rel="lightbox">
+              <img src="../images/screenshot-93bc2879-84a3-4fe8-9610-a0a56ddb15b5.png" class="screenshot-thumbnail" />
+            </a>
+          </div>
+        </div>
+      
+    </div>
   </div>
 
     
+    
+  
+
+    
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+  
+	</li></ul></div></div>
+  
+    
   
 
   
@@ -411,15 +363,9 @@ To execute this specification, use <code>mvn test</code></p>
   
     
   
-    <span><p>//* “MenuItems-5_2RN” className nesnesine tikla</p>
+    <span><p>//* Mouse over1</p>
 
-<p>//<em>”//</em>[@id=footer_11]” id nesnesi varsa tikla</p>
-
-<p>//*Mouse over1</p>
-
-<p>//* “MenuItems-1-U3X” id nesnesi altindaki “Mod” yazisina tikla</p>
-
-<p>//* “Menu-Banner” id nesnesi altindaki “Elektronik” yazisina tikla</p>
+<p>//* Ürün Seçimi</p>
 </span>
   
 
