@@ -20,13 +20,29 @@ import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Random;
 
-import static java.lang.Thread.sleep;
-import static org.assertj.core.api.Assertions.assertThat;
-
 public class StepImplementation extends BaseTest {
 
+    public static final int DEFAULT_WAIT = 20;
+    public static final int MIN_WAIT = 5;
+    public static final int MAX_WAIT = 20;
+    protected WebDriver driver;
     private int id;
     private String element;
+    private int rndNumber = 0;
+
+    public static String Md5(String password) throws Exception {
+        MessageDigest md = MessageDigest.getInstance("MD5");
+        md.update(password.getBytes());
+
+        byte[] byteData = md.digest();
+
+        StringBuffer sb = new StringBuffer();
+        for (int i = 0; i < byteData.length; i++) {
+            sb.append(Integer.toString((byteData[i] & 0xff) + 0x100, 16)
+                    .substring(1));
+        }
+        return sb.toString();
+    }
 
     @BeforeScenario
     public void setUp() throws Exception {
@@ -34,34 +50,28 @@ public class StepImplementation extends BaseTest {
         this.driver = super.driver;
     }
 
-    protected WebDriver driver;
-    public static final int DEFAULT_WAIT = 20;
-    public static final int MIN_WAIT = 5;
-    public static final int MAX_WAIT = 20;
-
-
     @Step("<ulr> adresine git")
     public void openPage(String address) {
         driver.get(super.baseUrl + address);
     }
 
-
     @Step("\"<text>\" yazisina tikla")
     public WebElement clickText(String text) {
-        WebElement element = getElementBy(By.xpath("//*[contains(text(), '"+text+"')]"));
+        WebElement element = getElementBy(By.xpath("//*[contains(text(), '" + text + "')]"));
         element.click();
         return element;
     }
 
     @Step("\"<id>\" id nesnesi altindaki \"<text>\" yazisina tikla")
     public WebElement clickTextInElement(String id, String text) {
-        WebElement element = getElementBy(By.xpath("//*[@id='"+id+"']//*[contains(text(), '"+text+"')]"));
+        WebElement element = getElementBy(By.xpath("//*[@id='" + id + "']//*[contains(text(), '" + text + "')]"));
         element.click();
         return element;
     }
+
     @Step("\"<css>\" className nesnesi altindaki \"<text>\" yazisina tikla")
     public WebElement clickTextInElement1(String css, String text) {
-        WebElement element = getElementBy(By.xpath("//*[@name='"+css+"']//*[contains(text(), '"+text+"')]"));
+        WebElement element = getElementBy(By.xpath("//*[@name='" + css + "']//*[contains(text(), '" + text + "')]"));
         element.click();
         return element;
     }
@@ -88,7 +98,6 @@ public class StepImplementation extends BaseTest {
         executeJS(jsStmt, true);
     }
 
-
     protected Object executeJS(String jsStmt, boolean wait) {
         return wait ? getJSExecutor().executeScript(jsStmt, "") : getJSExecutor().executeAsyncScript(jsStmt, "");
     }
@@ -111,13 +120,11 @@ public class StepImplementation extends BaseTest {
         return setObjectBy(By.name(name), value);
     }
 
-
     @Step("<id> id alanina <value> yaz")
     public WebElement setObjectById(String id, String value) {
 
         return setObjectBy(By.id(id), value);
     }
-
 
     @Step("\"<css>\" css alanina \"<value>\" yazdin")
     public WebElement setObjectByCssSelector(String cssSelector, String value) {
@@ -130,11 +137,11 @@ public class StepImplementation extends BaseTest {
         return setObjectBy(By.xpath(xpath), value);
     }
 
-
     @Step("\"<xpath>\" className alanina \"<value>\" yazdin")
     public WebElement setObjectByClassName(String className, String value) {
         return setObjectBy(By.className(className), value);
     }
+
     @Step("<by> seçiminiz <value>")
     public WebElement selectValueObjectBy(By by, String value) {
         WebElement element = getElementBy(by);
@@ -154,14 +161,11 @@ public class StepImplementation extends BaseTest {
         return element;
     }
 
-
-
     public WebElement selectIndexObjectById(String name, int index) {
         WebElement element = driver.findElement(By.id(name));
         new Select(element).selectByIndex(index);
         return element;
     }
-
 
     @Step("<id> id nesnesine tikla")
     public WebElement clickObjectById(String id) {
@@ -175,49 +179,52 @@ public class StepImplementation extends BaseTest {
     }
 
     @Step("Login kontrol <text> ")
-     public void kontrol(String text){
+    public void kontrol(String text) {
         String a;
-        a=By.xpath("//*[@id=\"myAccount\"]/span/a/span[2]").toString() ;
-        if (a == text){
+        a = By.xpath("//*[@id=\"myAccount\"]/span/a/span[2]").toString();
+        if (a == text) {
             getElementBy(By.id("shoppingCart")).click();
         }
 
     }
-   public void rndNumber(String className){
-        List<WebElement> elementList= driver.findElements(By.className(className));
-        int size= elementList.size();
-        int rndNumber= new Random().nextInt(size);
-        WebElement element= elementList.get(rndNumber);
+
+    public void rndNumber(String className) {
+
+        List<WebElement> elementList = driver.findElements(By.className(className));
+        int size = elementList.size();
+        //rndNumber = new Random().nextInt(size);
+
+        WebElement element = elementList.get(rndNumber);
         element.click();
+
     }
 
     @Step("Rastgele bir kategori ve alt kategori seçme")
-    public void selectCategory(){
-            rndNumber("MenuItems-1-U3X");
-            waitSeconds(4);
+    public void selectCategory() {
+        rndNumber("MenuItems-1-U3X");
+        waitSeconds(4);
+        if (rndNumber == 0) {
+            rndNumber("ChildMenuItems-3m2LI");
+            rndNumber("ChildMenuItems-3R6bj");
+        } else {
             rndNumber("ChildMenuItems-aeXwv");
-        this.selectCategory();
-    }
+        }
 
+
+    }
 
     @Step("\"<css>\" css nesnesine tikla")
     public WebElement clickObjectByCss(String css) {
 
         return clickObjectBy(By.cssSelector(css));
     }
+
     @Step("Mouse over")
-    public  void mouseOver(){
+    public void mouseOver() {
         Actions action = new Actions(driver);
         WebElement we = driver.findElement(By.xpath("//*[@id=\"myAccount\"]"));
         action.moveToElement(we).build().perform();
     }
-    @Step("Mouse over1")
-    public  void mouseOver1(){
-        Actions action = new Actions(driver);
-        WebElement we = driver.findElement(By.xpath("//*[@id='navigationDesktop_183']/div/div/div/div[1]/div/ul/li[2]/span/span"));
-        action.moveToElement(we).build().perform();
-    }
-
 
     @Step("<css> className nesnesine tikla")
     public WebElement clickObjectByClassName(String className) {
@@ -233,7 +240,6 @@ public class StepImplementation extends BaseTest {
     public WebElement clickObjectByXpath(String xpath) {
         return clickObjectBy(By.xpath(xpath));
     }
-
 
     @Step("\"<id>\" id nesnesi varsa tikla")
     public WebElement clickObjectIfExist(String id) {
@@ -263,7 +269,6 @@ public class StepImplementation extends BaseTest {
     public WebElement getElementByClassName(String className) {
         return getElementBy(By.className(className));
     }
-
 
     public List<WebElement> getElementsBy(By by) {
         return driver.findElements(by);
@@ -325,7 +330,7 @@ public class StepImplementation extends BaseTest {
     }
 
     public String getCurrentUrl() {
-        return driver.getCurrentUrl().trim().toString();
+        return driver.getCurrentUrl().trim();
     }
 
     public void goBack() {
@@ -339,7 +344,6 @@ public class StepImplementation extends BaseTest {
         } catch (InterruptedException e) {
         }
     }
-
 
     public void moveMouse(By by, By validateDisplayWebObject, int count) {
         WebDriverWait wait = new WebDriverWait(driver, 20);
@@ -473,21 +477,6 @@ public class StepImplementation extends BaseTest {
     public void waitForElement(WebDriver driver, int seconds, By elementBy) {
         WebDriverWait wait = new WebDriverWait(driver, seconds, 1000);
         wait.until(ExpectedConditions.presenceOfElementLocated(elementBy));
-    }
-
-
-    public static String Md5(String password) throws Exception {
-        MessageDigest md = MessageDigest.getInstance("MD5");
-        md.update(password.getBytes());
-
-        byte byteData[] = md.digest();
-
-        StringBuffer sb = new StringBuffer();
-        for (int i = 0; i < byteData.length; i++) {
-            sb.append(Integer.toString((byteData[i] & 0xff) + 0x100, 16)
-                    .substring(1));
-        }
-        return sb.toString();
     }
 
     public boolean isClickable(WebElement element) {

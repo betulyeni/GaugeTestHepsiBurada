@@ -15,11 +15,10 @@ Tags:Kullanici girisi
 
 Ürün Seçimi
 --------------------
-Tags:Kullanici girisi
+Tags:Rastgele Kategori Seçme
 * "/" adresine git
 * Rastgele bir kategori ve alt kategori seçme
-//* Mouse over1
-//* Ürün Seçimi
+
 
 
  Kullanıcı Girişi
@@ -34,8 +33,7 @@ Rasgele Bir Kategori Seçimi
 ---------------------------
 Tags: Kategori ve alt kategori seçimi
 * "/" adresine git
-* Mouse over1
-* Ürün Seçimi
+* Rastgele bir kategori ve alt kategori seçme
 * En düşük "10" ve En yüksek "4000" bilgisi giriniz
 * Seçilen ürünün kayıtları
 
