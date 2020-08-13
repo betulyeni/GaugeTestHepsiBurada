@@ -12,15 +12,6 @@ Tags:Kullanici girisi
 * "/" adresine git
 * "xxxxxxx" ve "xxxxxx" ile giris yap
 
-
-Ürün Seçimi
---------------------
-Tags:Rastgele Kategori Seçme
-* "/" adresine git
-* Rastgele bir kategori ve alt kategori seçme
-
-
-
  Kullanıcı Girişi
 --------------------------
 Tags:Hatali kullanici giris kontrol
@@ -29,13 +20,12 @@ Tags:Hatali kullanici giris kontrol
 * ekranda "xxxxx" yazisini gormen gerekiyor
 * Login kontrol "xxxxxx"
 
-Rasgele Bir Kategori Seçimi
----------------------------
-Tags: Kategori ve alt kategori seçimi
+Ürün Seçimi
+--------------------
+Tags:Rastgele Kategori Seçme
 * "/" adresine git
-* Rastgele bir kategori ve alt kategori seçme
+* Ürün Seçimi
 * En düşük "10" ve En yüksek "4000" bilgisi giriniz
-* Seçilen ürünün kayıtları
 
 Yeni adres ekle
 ---------------------

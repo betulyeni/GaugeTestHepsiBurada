@@ -2,9 +2,7 @@ Created by TESTINIUM on 13.08.2020
 
 This is a concept file with following syntax for each concept.
 # Ürün Seçimi
-* "item-897" className nesnesine tikla
-* "owl-lazy" className nesnesine tikla
+* Rastgele bir kategori ve alt kategori seçme
+* Rastgele Marka seç
 
-# Seçilen ürünün kayıtları
-* "//*[@id='fbfa214d-e5ab-4cd7-8f66-a34e36d66896']/div/div/ul/li[1]/div/a/figure/div[1]/div/div[1]/div/img" xpath nesnesine tikla
-* urun adı "productNameurunAdi" urun tutar "product().currentListing.currentPriceBeforePoint + ',' + product().currentListing.currentPriceAfterPoint"
+

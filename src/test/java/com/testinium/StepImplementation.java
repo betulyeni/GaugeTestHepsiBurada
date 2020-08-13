@@ -29,6 +29,7 @@ public class StepImplementation extends BaseTest {
     private int id;
     private String element;
     private int rndNumber = 0;
+    private int rndMarka = 0;
 
     public static String Md5(String password) throws Exception {
         MessageDigest md = MessageDigest.getInstance("MD5");
@@ -131,15 +132,15 @@ public class StepImplementation extends BaseTest {
         return setObjectBy(By.cssSelector(cssSelector), value);
     }
 
-    @Step("\"<xpath>\" xpath alanina \"<value>\" yazdin")
+    @Step("<xpath> xpath alanina <value> yazdin")
     public WebElement setObjectByXpath(String xpath, String value) {
 
         return setObjectBy(By.xpath(xpath), value);
     }
 
-    @Step("\"<xpath>\" className alanina \"<value>\" yazdin")
+    @Step("<xpath> className alanina <value> yazdin")
     public WebElement setObjectByClassName(String className, String value) {
-        return setObjectBy(By.className(className), value);
+        return setObjectBy(By.xpath(className), value);
     }
 
     @Step("<by> seçiminiz <value>")
@@ -192,8 +193,7 @@ public class StepImplementation extends BaseTest {
 
         List<WebElement> elementList = driver.findElements(By.className(className));
         int size = elementList.size();
-        //rndNumber = new Random().nextInt(size);
-
+        rndNumber = new Random().nextInt(size);
         WebElement element = elementList.get(rndNumber);
         element.click();
 
@@ -211,9 +211,29 @@ public class StepImplementation extends BaseTest {
         }
 
 
-    }
 
-    @Step("\"<css>\" css nesnesine tikla")
+    }
+    public void rndNumber1(String xpath){
+
+        List<WebElement> elementList1 = driver.findElements(By.className(xpath));
+        int size = elementList1.size();
+        rndMarka= new Random().nextInt(size);
+        WebElement element1 = elementList1.get(rndMarka);
+        element1.click();
+
+
+    }
+    @Step("Rastgele Marka seç")
+    public void selectCategory1() {
+        rndNumber1("show-all-brands");
+        waitSeconds(4);
+
+
+        }
+
+
+
+        @Step("\"<css>\" css nesnesine tikla")
     public WebElement clickObjectByCss(String css) {
 
         return clickObjectBy(By.cssSelector(css));
@@ -236,7 +256,7 @@ public class StepImplementation extends BaseTest {
         return clickObjectBy(By.linkText(linkText));
     }
 
-    @Step("\"<xpath>\" xpath nesnesine tikla")
+    @Step("<xpath> xpath nesnesine tikla")
     public WebElement clickObjectByXpath(String xpath) {
         return clickObjectBy(By.xpath(xpath));
     }

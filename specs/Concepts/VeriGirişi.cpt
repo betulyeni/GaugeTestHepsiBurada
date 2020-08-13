@@ -2,6 +2,5 @@ Created by TESTINIUM on 13.08.2020
 
 This is a concept file with following syntax for each concept.
 # En düşük <minFiyat> ve En yüksek <maxFiyat> bilgisi giriniz
-* "/bilgisayarlar-c-2147483646" adresine git
-* "#\35 b8a9b97-a3d3-4b4b-97c0-a26833dd8ebe > div > ol > li.box-container.fiyat > div > div > div:nth-child(1) > input" css alanina <minFiyat> yazdin
-* "#\35 b8a9b97-a3d3-4b4b-97c0-a26833dd8ebe > div > ol > li.box-container.fiyat > div > div > div:nth-child(3) > input" css alanina <maxFiyat> yazdin
+* "//*[@id='fee1d028-cebf-4e77-ae3d-a6aa49579b20']/div/ol/li[2]/div/div/div[1]/input" xpath alanina <minFiyat> yazdin
+* "//*[@id='fee1d028-cebf-4e77-ae3d-a6aa49579b20']/div/ol/li[2]/div/div/div[3]/input" xpath alanina <maxFiyat> yazdin
