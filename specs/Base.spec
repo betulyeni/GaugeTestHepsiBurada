@@ -19,9 +19,9 @@ Tags:Kullanici girisi
 --------------------------
 Tags:Hatali kullanici giris kontrol
 * "/" adresine git
-* "betul.yeni@outlook.com" ve "btly.1995" ile giris yap
-* ekranda "Betül Yeni" yazisini gormen gerekiyor
-* Login kontrol "Betül Yeni"
+* "xxxxxxx" ve "xxxxx" ile giris yap
+* ekranda "xxxxx" yazisini gormen gerekiyor
+* Login kontrol "xxxxxx"
 
 
 Rasgele Bir Kategori Seçimi
