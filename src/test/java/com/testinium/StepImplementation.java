@@ -3,6 +3,7 @@ package com.testinium;
 import com.testinium.Base.BaseTest;
 import com.thoughtworks.gauge.BeforeScenario;
 import com.thoughtworks.gauge.Step;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -72,12 +73,27 @@ public class StepImplementation extends BaseTest {
     }
 
 
-    /*@Step("ekranda <id> id nesnesini gormen gerekiyor")
+    @Step("ekranda <id> id nesnesini gormen gerekiyor")
     public void objectContro1(String id) {
-        getElementBy(By.xp(id)).getAttribute("originalPrice");
+        getElementBy(By.xpath(id)).getAttribute("originalPrice");
 
-    }*/
+    }
 
+
+    public String urunEkle() throws InterruptedException {
+        elementTikla(By.cssSelector("div.OldMyAccount-1BFaN > a"));
+        elementTikla(By.cssSelector("div > button.increase"));
+        Thread.sleep(3000);
+        elementTikla(By.cssSelector("div > button.increase"));
+        Thread.sleep(3000);
+        return findElement(By.cssSelector(" div:nth-child(1) > p > span")).getText();
+    }
+
+    @Step("The number is increased by 2.")
+    public void urunArttır() throws InterruptedException {
+        String number = urunEkle();
+        Assert.assertEquals(number , "3 ürün");
+    }
 
     public WebElement submitObjectBy(By by) {
         WebElement element = getElementBy(by);

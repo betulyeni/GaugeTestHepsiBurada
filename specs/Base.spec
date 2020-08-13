@@ -36,6 +36,6 @@ Tags:Rastgele Kategori Seçme
 Yeni adres ekle
 ---------------------
 * "/" adresine git
-* "xxxxxx" ve "xxxxxx" ile giris yap
-* "Testinium","Şirketi","AcıBadem","iş","o5554443322","40050302020","1234123412341234","Testinium","234" bilgileri giriniz
+* "betul.yeni@outlook.com" ve "btly.1995" ile giris yap
+*"Testinium","Şirketi","AcıBadem","iş","o5554443322","40050302020","1234123412341234","Testinium","234"bilgileri giriniz
 

@@ -1,9 +1,9 @@
 Created by TESTINIUM on 13.08.2020
 
 This is a concept file with following syntax for each concept.
-# <adın>,<soyadın>,<adres>,<adresAdı>,<telefon>,<tc>,<kartNo>,<karttakiIsim>,<cvc> bilgileri giriniz
-* "shoppingCart" id nesnesi varsa tikla
-* "Alışverişi Tamamla" yazisina tikla
+# <adın>,<soyadın>,<adres>,<adresAdı>,<telefon>,<tc>,<kartNo>,<karttakiIsim>,<cvc>bilgileri giriniz
+*Mouse over
+* "//*[@id='myAccount']/div/div[2]/ul/li[2]/a" xpath nesnesine tikla
 * "link-type-two" className nesnesine tikla
 * "first-name" id alanina <adın> yaz
 * "last-name" id alanina <soyadın> yaz
