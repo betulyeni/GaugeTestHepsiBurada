@@ -30,6 +30,7 @@ public class StepImplementation extends BaseTest {
     private String element;
     private int rndNumber = 0;
     private int rndMarka = 0;
+    private int rndUrun = 0;
 
     public static String Md5(String password) throws Exception {
         MessageDigest md = MessageDigest.getInstance("MD5");
@@ -56,23 +57,9 @@ public class StepImplementation extends BaseTest {
         driver.get(super.baseUrl + address);
     }
 
-    @Step("\"<text>\" yazisina tikla")
+    @Step("<text> yazisina tikla")
     public WebElement clickText(String text) {
         WebElement element = getElementBy(By.xpath("//*[contains(text(), '" + text + "')]"));
-        element.click();
-        return element;
-    }
-
-    @Step("\"<id>\" id nesnesi altindaki \"<text>\" yazisina tikla")
-    public WebElement clickTextInElement(String id, String text) {
-        WebElement element = getElementBy(By.xpath("//*[@id='" + id + "']//*[contains(text(), '" + text + "')]"));
-        element.click();
-        return element;
-    }
-
-    @Step("\"<css>\" className nesnesi altindaki \"<text>\" yazisina tikla")
-    public WebElement clickTextInElement1(String css, String text) {
-        WebElement element = getElementBy(By.xpath("//*[@name='" + css + "']//*[contains(text(), '" + text + "')]"));
         element.click();
         return element;
     }
@@ -80,13 +67,17 @@ public class StepImplementation extends BaseTest {
     @Step("ekranda <id> id nesnesini gormen gerekiyor")
     public void objectControl(String id) {
         getElementBy(By.id(id));
+
+
     }
 
-    @Step("ekranda <text> yazisini gormen gerekiyor")
-    public void textControl(String text) {
 
-        getElementBy(By.xpath("//*[@id=\"myAccount\"]/span/a/span[2]"));
-    }
+    /*@Step("ekranda <id> id nesnesini gormen gerekiyor")
+    public void objectContro1(String id) {
+        getElementBy(By.xp(id)).getAttribute("originalPrice");
+
+    }*/
+
 
     public WebElement submitObjectBy(By by) {
         WebElement element = getElementBy(by);
@@ -116,10 +107,6 @@ public class StepImplementation extends BaseTest {
         return element;
     }
 
-    @Step("\"<name>\" name alanina \"<value>\" yaz")
-    public WebElement setObjectByName(String name, String value) {
-        return setObjectBy(By.name(name), value);
-    }
 
     @Step("<id> id alanina <value> yaz")
     public WebElement setObjectById(String id, String value) {
@@ -127,10 +114,6 @@ public class StepImplementation extends BaseTest {
         return setObjectBy(By.id(id), value);
     }
 
-    @Step("\"<css>\" css alanina \"<value>\" yazdin")
-    public WebElement setObjectByCssSelector(String cssSelector, String value) {
-        return setObjectBy(By.cssSelector(cssSelector), value);
-    }
 
     @Step("<xpath> xpath alanina <value> yazdin")
     public WebElement setObjectByXpath(String xpath, String value) {
@@ -150,17 +133,6 @@ public class StepImplementation extends BaseTest {
         return element;
     }
 
-    @Step("\"<id>\" id nesnesinde \"<value>\" degerini sec")
-    public WebElement selectValueObjectById(String id, String value) {
-        WebElement element = selectValueObjectBy(By.id(id), value);
-        return element;
-    }
-
-    @Step("\"name\" name nesnesinde \"<value>\" degerini sec")
-    public WebElement selectValueObjectByName(String name, String value) {
-        WebElement element = selectValueObjectBy(By.name(name), value);
-        return element;
-    }
 
     public WebElement selectIndexObjectById(String name, int index) {
         WebElement element = driver.findElement(By.id(name));
@@ -174,10 +146,6 @@ public class StepImplementation extends BaseTest {
         return clickObjectBy(By.id(id));
     }
 
-    @Step("\"<id>\" name nesnesine tikla")
-    public WebElement clickObjectByName(String name) {
-        return clickObjectBy(By.name(name));
-    }
 
     @Step("Login kontrol <text> ")
     public void kontrol(String text) {
@@ -210,8 +178,6 @@ public class StepImplementation extends BaseTest {
             rndNumber("ChildMenuItems-aeXwv");
         }
 
-
-
     }
     public void rndNumber1(String xpath){
 
@@ -228,15 +194,49 @@ public class StepImplementation extends BaseTest {
         rndNumber1("show-all-brands");
         waitSeconds(4);
 
-
         }
 
+    public void rndNumber2(String xpath){
+
+        List<WebElement> elementList1 = driver.findElements(By.className(xpath));
+        int size = elementList1.size();
+        rndUrun= new Random().nextInt(size);
+        WebElement element1 = elementList1.get(rndUrun);
+       System.out.println(element1.getAttribute("price"));
+        element1.click();
 
 
-        @Step("\"<css>\" css nesnesine tikla")
-    public WebElement clickObjectByCss(String css) {
+    }
 
-        return clickObjectBy(By.cssSelector(css));
+    public void degerGonder(By by, String text) {
+
+        findElement(by).clear();
+        findElement(by).sendKeys(text);
+    }
+
+    public void fiyatAraligi(String min ,String max)
+    {
+        degerGonder(By.cssSelector("li.box-container.fiyat  div:nth-child(1) > input"),min);
+        degerGonder(By.cssSelector(" li.box-container.fiyat  div:nth-child(3) > input"),max);
+        elementTikla(By.cssSelector("li.box-container.fiyat  div.range-contain-row.right > button"));
+    }
+
+    @Step("Fiyat aralığı <min> , <max>")
+    public void fiyatAraligiStep(String min , String max)
+    {
+        fiyatAraligi(min,max);
+    }
+
+    public void elementTikla(By by) {
+        new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(by));
+        findElement(by).click();
+    }
+
+    @Step("Rastgele Urun seç")
+    public void selectCategory2() {
+        rndNumber2("carousel-lazy-item");
+        waitSeconds(4);
+
     }
 
     @Step("Mouse over")
@@ -251,17 +251,21 @@ public class StepImplementation extends BaseTest {
         return clickObjectBy(By.className(className));
     }
 
-    @Step("\"<linkText>\" linkine tikla")
-    public WebElement clickObjectByLinkText(String linkText) {
-        return clickObjectBy(By.linkText(linkText));
-    }
-
     @Step("<xpath> xpath nesnesine tikla")
     public WebElement clickObjectByXpath(String xpath) {
         return clickObjectBy(By.xpath(xpath));
     }
+    @Step("Ürün Fiyat Karşılastırma <ilksayfa>,<detaySayfa>")
+    public void urundeger(String ilksayfa,String detaySayfa){
+        getElementsBy(By.className(ilksayfa));
+        getElementsBy(By.className(detaySayfa));
 
-    @Step("\"<id>\" id nesnesi varsa tikla")
+    }
+    //price product-price
+
+    //originalPrice
+
+    @Step("<id> id nesnesi varsa tikla")
     public WebElement clickObjectIfExist(String id) {
         if (isExistElement(3, By.id(id)))
             return clickObjectById(id);

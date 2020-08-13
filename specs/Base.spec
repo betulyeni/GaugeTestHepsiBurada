@@ -17,7 +17,7 @@ Tags:Kullanici girisi
 Tags:Hatali kullanici giris kontrol
 * "/" adresine git
 * "xxxxxxx" ve "xxxxx" ile giris yap
-* ekranda "xxxxx" yazisini gormen gerekiyor
+* ekranda "xxxxxxx" id nesnesini gormen gerekiyor
 * Login kontrol "xxxxxx"
 
 Ürün Seçimi
@@ -25,7 +25,13 @@ Tags:Hatali kullanici giris kontrol
 Tags:Rastgele Kategori Seçme
 * "/" adresine git
 * Ürün Seçimi
-* En düşük "10" ve En yüksek "4000" bilgisi giriniz
+* Fiyat aralığı "10" , "4000"
+
+
+Ürün Tutar Karşılaştırma
+------------------------
+*ekranda "price product-price" id nesnesini gormen gerekiyor
+
 
 Yeni adres ekle
 ---------------------

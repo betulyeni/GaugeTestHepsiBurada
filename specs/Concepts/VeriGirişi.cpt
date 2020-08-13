@@ -1,6 +1,0 @@
-Created by TESTINIUM on 13.08.2020
-
-This is a concept file with following syntax for each concept.
-# En düşük <minFiyat> ve En yüksek <maxFiyat> bilgisi giriniz
-* "//*[@id='fee1d028-cebf-4e77-ae3d-a6aa49579b20']/div/ol/li[2]/div/div/div[1]/input" xpath alanina <minFiyat> yazdin
-* "//*[@id='fee1d028-cebf-4e77-ae3d-a6aa49579b20']/div/ol/li[2]/div/div/div[3]/input" xpath alanina <maxFiyat> yazdin

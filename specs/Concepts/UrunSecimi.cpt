@@ -3,6 +3,7 @@ Created by TESTINIUM on 13.08.2020
 This is a concept file with following syntax for each concept.
 # Ürün Seçimi
 * Rastgele bir kategori ve alt kategori seçme
-* Rastgele Marka seç
+//* Rastgele Marka seç
+//* Rastgele Urun seç
 
 

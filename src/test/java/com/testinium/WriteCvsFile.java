@@ -17,7 +17,7 @@ class WriteCvsFile  extends BaseTest {
     public  void main(String urunAdi,String urunTutar) throws IOException {
         FileWriter writecsv = new FileWriter ("filename.csv");
         Writer append = writecsv.append("urunAdi,urunTutar");
-                writecsv.append('\n');
+        writecsv.append('\n');
 
     }
 }
