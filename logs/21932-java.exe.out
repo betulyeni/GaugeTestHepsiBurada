@@ -1,0 +1,88 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+{"logLevel":"debug","message":"gauge-java took 950milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 950"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 64075"}
+{"logLevel":"info","message":"Listening on port:64075"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Loading {}\" id nesnesi varsa tiklavia reflected sources."}
+{"logLevel":"debug","message":"Loading {}\" className alanina \"{}\" yazdinvia reflected sources."}
+{"logLevel":"debug","message":"Loading {}\" id nesnesinde \"{}\" degerini secvia reflected sources."}
+{"logLevel":"debug","message":"Comparing 'com.testinium.StepImplementation.objectControl' and 'com.testinium.StepImplementation.objectControl'"}
+{"logLevel":"debug","message":"Found ekranda {} id nesnesini gormen gerekiyor in current project scope."}
+{"logLevel":"debug","message":"Loading {}\" ms beklevia reflected sources."}
+{"logLevel":"debug","message":"Comparing 'com.testinium.StepImplementation.openPage' and 'com.testinium.StepImplementation.openPage'"}
+{"logLevel":"debug","message":"Found {} adresine git in current project scope."}
+{"logLevel":"debug","message":"Loading {}\" xpath alanina \"{}\" yazdinvia reflected sources."}
+{"logLevel":"debug","message":"Comparing 'com.testinium.StepImplementation.textControl' and 'com.testinium.StepImplementation.textControl'"}
+{"logLevel":"debug","message":"Found ekranda {} yazisini gormen gerekiyor in current project scope."}
+{"logLevel":"debug","message":"Loading {}\" name nesnesine tiklavia reflected sources."}
+{"logLevel":"debug","message":"Loading {}\" css alanina \"{}\" yazdinvia reflected sources."}
+{"logLevel":"debug","message":"Loading {}\" yazisina tiklavia reflected sources."}
+{"logLevel":"debug","message":"Comparing 'com.testinium.StepImplementation.clickObjectById' and 'com.testinium.StepImplementation.clickObjectById'"}
+{"logLevel":"debug","message":"Found {} id nesnesine tikla in current project scope."}
+{"logLevel":"debug","message":"Loading {}\" css nesnesine tiklavia reflected sources."}
+{"logLevel":"debug","message":"Comparing 'com.testinium.StepImplementation.mouseOver' and 'com.testinium.StepImplementation.mouseOver'"}
+{"logLevel":"debug","message":"Found Mouse over in current project scope."}
+{"logLevel":"debug","message":"Loading {}\" className nesnesine tiklavia reflected sources."}
+{"logLevel":"debug","message":"Comparing 'com.testinium.StepImplementation.mouseOver1' and 'com.testinium.StepImplementation.mouseOver1'"}
+{"logLevel":"debug","message":"Found Mouse over1 in current project scope."}
+{"logLevel":"debug","message":"Loading {}\" name alanina \"{}\" yazvia reflected sources."}
+{"logLevel":"debug","message":"Comparing 'com.testinium.StepImplementation.kontrol' and 'com.testinium.StepImplementation.kontrol'"}
+{"logLevel":"debug","message":"Found Login kontrol {}  in current project scope."}
+{"logLevel":"debug","message":"Loading {}\" xpath nesnesine tiklavia reflected sources."}
+{"logLevel":"debug","message":"Loading name\" name nesnesinde \"{}\" degerini secvia reflected sources."}
+{"logLevel":"debug","message":"Loading {}\" linkine tiklavia reflected sources."}
+{"logLevel":"debug","message":"Comparing 'com.testinium.StepImplementation.setObjectById' and 'com.testinium.StepImplementation.setObjectById'"}
+{"logLevel":"debug","message":"Found {} id alanina {} yaz in current project scope."}
+{"logLevel":"debug","message":"Loading {}\" id nesnesi altindaki \"{}\" yazisina tiklavia reflected sources."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\t{} id nesnesine tikla : public WebElement clickObjectById(String id)"}
+{"logLevel":"debug","message":"\t\\\"{}\\\" name nesnesine tikla : public WebElement clickObjectByName(String name)"}
+{"logLevel":"debug","message":"\t\\\"{}\\\" ms bekle : public void sleep(Integer time)"}
+{"logLevel":"debug","message":"\t\\\"{}\\\" id nesnesi varsa tikla : public WebElement clickObjectIfExist(String id)"}
+{"logLevel":"debug","message":"\t{} adresine git : public void openPage(String address)"}
+{"logLevel":"debug","message":"\t\\\"{}\\\" id nesnesinde \\\"{}\\\" degerini sec : public WebElement selectValueObjectById(String id, String value)"}
+{"logLevel":"debug","message":"\t{}\" yazisina tikla : null"}
+{"logLevel":"debug","message":"\t\\\"{}\\\" css alanina \\\"{}\\\" yazdin : public WebElement setObjectByCssSelector(String cssSelector, String value)"}
+{"logLevel":"debug","message":"\t\\\"{}\\\" name alanina \\\"{}\\\" yaz : public WebElement setObjectByName(String name, String value)"}
+{"logLevel":"debug","message":"\tekranda {} yazisini gormen gerekiyor : public void textControl(String text)"}
+{"logLevel":"debug","message":"\t\\\"{}\\\" yazisina tikla : public WebElement clickText(String text)"}
+{"logLevel":"debug","message":"\t{}\" name nesnesine tikla : null"}
+{"logLevel":"debug","message":"\tMouse over1 : public void mouseOver1()"}
+{"logLevel":"debug","message":"\t\\\"{}\\\" linkine tikla : public WebElement clickObjectByLinkText(String linkText)"}
+{"logLevel":"debug","message":"\t\\\"name\\\" name nesnesinde \\\"{}\\\" degerini sec : public WebElement selectValueObjectByName(String name, String value)"}
+{"logLevel":"debug","message":"\tLogin kontrol {}  : public void kontrol(String text)"}
+{"logLevel":"debug","message":"\t{}\" id nesnesinde \"{}\" degerini sec : null"}
+{"logLevel":"debug","message":"\t{}\" className alanina \"{}\" yazdin : null"}
+{"logLevel":"debug","message":"\t{}\" xpath alanina \"{}\" yazdin : null"}
+{"logLevel":"debug","message":"\t{}\" linkine tikla : null"}
+{"logLevel":"debug","message":"\t\\\"{}\\\" className alanina \\\"{}\\\" yazdin : public WebElement setObjectByClassName(String className, String value)"}
+{"logLevel":"debug","message":"\t\\\"{}\\\" id nesnesi altindaki \\\"{}\\\" yazisina tikla : public WebElement clickTextInElement(String id, String text)"}
+{"logLevel":"debug","message":"\t{}\" xpath nesnesine tikla : null"}
+{"logLevel":"debug","message":"\t{}\" css nesnesine tikla : null"}
+{"logLevel":"debug","message":"\tMouse over : public void mouseOver()"}
+{"logLevel":"debug","message":"\t\\\"{}\\\" xpath nesnesine tikla : public WebElement clickObjectByXpath(String xpath)"}
+{"logLevel":"debug","message":"\tname\" name nesnesinde \"{}\" degerini sec : null"}
+{"logLevel":"debug","message":"\t{} id alanina {} yaz : public WebElement setObjectById(String id, String value)"}
+{"logLevel":"debug","message":"\t{}\" id nesnesi varsa tikla : null"}
+{"logLevel":"debug","message":"\t\\\"{}\\\" css nesnesine tikla : public WebElement clickObjectByCss(String css)"}
+{"logLevel":"debug","message":"\t\\\"{}\\\" className nesnesine tikla : public WebElement clickObjectByClassName(String className)"}
+{"logLevel":"debug","message":"\t\\\"{}\\\" xpath alanina \\\"{}\\\" yazdin : public WebElement setObjectByXpath(String xpath, String value)"}
+{"logLevel":"debug","message":"\t{}\" css alanina \"{}\" yazdin : null"}
+{"logLevel":"debug","message":"\t{}\" ms bekle : null"}
+{"logLevel":"debug","message":"\t{}\" name alanina \"{}\" yaz : null"}
+{"logLevel":"debug","message":"\t{}\" id nesnesi altindaki \"{}\" yazisina tikla : null"}
+{"logLevel":"debug","message":"\tekranda {} id nesnesini gormen gerekiyor : public void objectControl(String id)"}
+{"logLevel":"debug","message":"\t{}\" className nesnesine tikla : null"}
+Starting ChromeDriver 84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}) on port 26405
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Ağu 13, 2020 3:24:16 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
