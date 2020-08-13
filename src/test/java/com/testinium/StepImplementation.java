@@ -315,7 +315,6 @@ public class StepImplementation extends BaseTest {
         driver.navigate().back();
     }
 
-
     @Step("\"<time>\" ms bekle")
     public void sleep(Integer time) {
         try {

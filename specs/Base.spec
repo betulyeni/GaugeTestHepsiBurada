@@ -22,10 +22,14 @@ Tags:Hatali kullanici giris kontrol
 * ekranda "xxxxx" yazisini gormen gerekiyor
 * Login kontrol "xxxxxx"
 
-Fiyat girme
-------------------------
-Tags: Fiyat aralığı belirleme
+Rasgele Bir Kategori Seçimi
+---------------------------
+Tags: Kategori ve alt kategori seçimi
+* "/" adresine git
+* Mouse over1
+* Ürün Seçimi
 * En düşük "10" ve En yüksek "4000" bilgisi giriniz
+
 
 Yeni adres ekle
 ---------------------
